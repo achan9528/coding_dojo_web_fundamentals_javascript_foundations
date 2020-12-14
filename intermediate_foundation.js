@@ -131,5 +131,14 @@ console.log(secondLargest([3.14,7]));
 // Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 
 // 42, 42, false, false].
 
+function doubleTrouble(arr){
+    var n = 1;
+    var original_length = arr.length;
+    for (var i = 0; i < arr.length; i+=2){
+        arr.splice(n,0,arr[i]);
+        n+=2;
+    }
+    return arr;
+}
 
-
+console.log(doubleTrouble([4, "Ulysses", 42, false]));

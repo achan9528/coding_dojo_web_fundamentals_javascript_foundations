@@ -97,7 +97,6 @@ console.log(countPositives([-1,1,1,1]));
 function oddMoreSo(arr){
     if (arr.length >= 3){
         for (var i = 0; i <= arr.length - 3; i++){
-            console.log(i);
             if ((arr[i] % 2 != 0) && (arr[i+1] % 2 != 0) && (arr[i+2] % 2 != 0)){
                 console.log("That's odd");
             } else if ((arr[i] % 2 == 0) && (arr[i+1] % 2 == 0) && (arr[i+2] % 2 == 0)){
@@ -108,6 +107,8 @@ function oddMoreSo(arr){
 }
 
 console.log(oddMoreSo([2,2,2,2]));
+console.log(oddMoreSo([1,1,1]));
+console.log(oddMoreSo([1,1,1,1,1,1,1,1,1]));
 
 
 // Increment the Seconds - Given an array of numbers arr, 
